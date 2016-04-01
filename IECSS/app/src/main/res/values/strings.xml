@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">IECSS</string>
+    <string name="action_settings">Settings</string>
+    <string name="Submit">Submit</string>
+
+    <!--BPHCL_Circle -->
+
+    <string-array name="array1">
+        <item>Muzaffarpur</item>
+        <item>Patna</item>
+    </string-array>
+
+    <!--nbpdcl_division -->
+
+
+    <string-array name="array2">
+        <item>Hazipur</item>
+        <item>Muzaffarpur</item>
+        <item>Sitamarhi</item>
+        <item>Sheohar</item>
+    </string-array>
+
+    <!--sbpdcl_division -->
+
+    <string-array name="array3">
+        <item>Barh</item>
+        <item>Masaurhi</item>
+        <item>Fathua</item>
+        <item>Bihta</item>
+        <item>Patna(R)</item>
+    </string-array>
+
+    <!--division_muzaffarpur-->
+
+    <string-array name="array5">
+        <item>Motipur</item>
+        <item>Sahebganj</item>
+        <item>Markan</item>
+        <item>Dholi</item>
+        <item>Sujawalpur</item>
+        <item>Bandra</item>
+        <item>Bakhara</item>
+        <item>Paroo</item>
+    </string-array>
+
+    <!-- division_hazipur-->
+
+    <string-array name="array4">
+        <item>Bidupur</item>
+        <item>Rajapakar</item>
+        <item>Jandaha</item>
+        <item>Patepur</item>
+        <item>Mahuaa</item>
+        <item>Gouraul</item>
+        <item>Cherakala</item>
+        <item>Praptar</item>
+        <item>Lalganj</item>
+        <item>Sarai</item>
+        <item>Vaishali</item>
+        <item>Patedhi Belsar</item>
+    </string-array>
+
+    <!--division_Sitamarhi -->
+
+    <string-array name="array6">
+        <item>Pupri</item>
+        <item>Piprahi (Bajpatti)</item>
+        <item>Chouraut</item>
+        <item>Riga</item>
+        <item>Suppi</item>
+        <item>Sursand</item>
+        <item>Parihar</item>
+        <item>Bathnaha</item>
+        <item>Nanpur</item>
+        <item>Runnisaidpur</item>
+        <item>Belsand</item>
+    </string-array>
+
+    <!--division_sheohar-->
+
+    <string-array name="array7">
+        <item>Sheohar</item>
+        <item>Taryani</item>
+        <item>Piprahi</item>
+    </string-array>
+
+    <!-- division_barh-->
+
+    <string-array name="array8">
+        <item>Biharibigha</item>
+        <item>Belchhi</item>
+        <item>Pandarak</item>
+        <item>Hathidah</item>
+    </string-array>
+
+    <!--division_masaurhi -->
+
+    <string-array name="array9">
+        <item>Dhanarua</item>
+        <item>Dariyapur</item>
+        <item>Sampatchak</item>
+        <item>Kura Nawada</item>
+    </string-array>
+
+    <!-- division_fatuha-->
+
+    <string-array name="array10">
+        <item>Sabbalpur</item>
+        <item>Daniyawa</item>
+        <item>Khusrupur</item>
+    </string-array>
+
+    <!-- division_bihta-->
+
+    <string-array name="array11">
+        <item>Bihta Old</item>
+        <item>Pareo</item>
+        <item>Kanpa</item>
+        <item>Bikram</item>
+        <item>Lalabhadsara</item>
+        <item>Paliganj</item>
+        <item>Airforce</item>
+        <item>Sherpur</item>
+    </string-array>
+
+    <!--division_patna_rural -->
+
+    <string-array name="array12">
+        <item>Neora</item>
+        <item>Naubatpur</item>
+        <item>Bhusaula</item>
+    </string-array>
+
+
+
+
+
+
+
+
+</resources>
+
+
+
+
+
+
