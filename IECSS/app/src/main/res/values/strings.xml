@@ -131,6 +131,20 @@
         <item>Bhusaula</item>
     </string-array>
 
+    <string-array name="title">
+        <item>Patepur</item>
+        <item>Mahua</item>
+        <item>Singhara</item>
+        <item>Chandsarai</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>desc 1</item>
+        <item>desc 2</item>
+        <item>desc 3</item>
+        <item>desc 4</item>
+    </string-array>
+
 
 
 

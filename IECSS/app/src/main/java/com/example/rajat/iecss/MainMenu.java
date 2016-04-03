@@ -20,6 +20,7 @@ import android.widget.Spinner;
 import android.util.*;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -32,7 +33,7 @@ public class MainMenu extends Activity {
     Spinner spinner2;
     Spinner spinner3;
     ArrayAdapter<CharSequence> adapter;
-    ListView list;
+    ListView listView1;
 
     /**  public MainMenu(){
      HashMap<Integer, String> hashMap = new HashMap<>();
@@ -59,8 +60,9 @@ public class MainMenu extends Activity {
         spinner1 = (Spinner)findViewById(R.id.spinner1);
         spinner2 = (Spinner)findViewById(R.id.spinner2);
         spinner3 = (Spinner)findViewById(R.id.spinner3);
-        list = (ListView)findViewById(R.id.listView);
-     //   list.setAdapter(new VivazAdapter(this));
+       listView1 = (ListView)findViewById(R.id.listView1);
+
+        listView1.setAdapter(new VivzAdapter(this));
 
 
 
@@ -68,7 +70,8 @@ public class MainMenu extends Activity {
 
 
 
-        adapter = ArrayAdapter.createFromResource(this, R.array.array1, android.R.layout.simple_spinner_item);
+
+       adapter = ArrayAdapter.createFromResource(this, R.array.array1, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner1.setAdapter(adapter);
 
@@ -268,10 +271,73 @@ public class MainMenu extends Activity {
 
 
 
+    }}
+
+   class SingleRow{
+        int img;
+        String title;
+        String descriptions;
+        SingleRow(String title, String descriptions, int img){
+            this.title = title;
+            this.descriptions = descriptions;
+            this.img = img;
+
+        }
     }
 
 
-}
+     class VivzAdapter extends BaseAdapter{
+         ArrayList<SingleRow> arrayList1;
 
+         Context context;
+         VivzAdapter(Context c){
+             context = c;
+             arrayList1 = new ArrayList<SingleRow>();
+
+             Resources res = c.getResources();
+             String[] title = res.getStringArray(R.array.title);
+             String[] descriptions = res.getStringArray(R.array.descriptions);
+             int img = R.drawable.green;
+
+             for(int i = 0; i<4;i++){
+                 arrayList1.add(new SingleRow(title[i],descriptions[i],img));
+             }
+
+
+         }
+         @Override
+         public int getCount() {
+             return arrayList1.size();
+         }
+
+         @Override
+         public Object getItem(int i) {
+             return arrayList1.get(i);
+         }
+
+         @Override
+         public long getItemId(int i) {
+             return i;
+         }
+
+         @Override
+         public View getView(int i, View contentView, ViewGroup parent) {
+
+             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+             View row = inflater.inflate(R.layout.single_row, parent, false);
+
+             TextView title = (TextView)row.findViewById(R.id.title1);
+             TextView descriptions= (TextView)row.findViewById(R.id.desc);
+             ImageView img = (ImageView)row.findViewById(R.id.imageView);
+
+             SingleRow temp = arrayList1.get(i);
+             title.setText(temp.title);
+             descriptions.setText(temp.descriptions);
+             img.setImageResource(R.drawable.green);
+
+             return row;
+         }
+
+}
 
 

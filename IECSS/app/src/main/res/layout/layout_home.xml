@@ -56,16 +56,11 @@
         <ListView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/listView"
+            android:id="@+id/listView1"
             android:layout_gravity="center_horizontal" />
 
 
-        <Button
-            android:layout_width="166dp"
-            android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button"
-            android:layout_gravity="center_horizontal" />
+
 
 
     </LinearLayout>

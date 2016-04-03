@@ -48,27 +48,26 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
     public void onSubmit(View v) {
-        String userName = user_name.getText().toString();
-        String passWord = pass.getText().toString();
-        Log.d(TAG, "User Name : " + userName + " Password : " + passWord);
 
-        if(userName.equals("a")&& passWord.equals("a")) {
+            String userName = user_name.getText().toString();
+            String passWord = pass.getText().toString();
+            Log.d(TAG, "User Name : " + userName + " Password : " + passWord);
+
+            if (userName.equals("a") && passWord.equals("a")) {
 
 
-            Intent i = new Intent(this, MainMenu.class);
-            startActivity(i);
-        }
-
-        else {
-            user_name.setText("");
-            pass.setText("");
-            user_name.requestFocus();
-            Log.d(TAG, "Layout Home1");
-            Intent j = new Intent(this, Pop.class);
-            startActivity(j);
-        }
-
+                Intent i = new Intent(this, MainMenu.class);
+                startActivity(i);
+            } else {
+                user_name.setText("");
+                pass.setText("");
+                user_name.requestFocus();
+                Log.d(TAG, "Layout Home1");
+                Intent j = new Intent(this, Pop.class);
+                startActivity(j);
+            }
 
 
     }
